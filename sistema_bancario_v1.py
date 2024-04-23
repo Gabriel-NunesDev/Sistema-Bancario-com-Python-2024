@@ -44,13 +44,13 @@ while True:
         
         saque = float(input("Quanto deseja sacar? R$ "))
 
-        if saldo < 0:
+        if saldo <= 0:
             print("Não é possivel efetuar a operação, saque valores igual ou acima de R$ 1,00 real.")
         
         elif numero_saques > LIMITE_SAQUES - 1:
             print("Não foi possivel efetuar essa operação, limite de saque diário excedido! ")
         
-        elif saldo > limite:
+        elif saque > limite:
             print("Não foi possivel efetuar essa operação, o limite por saque é de R$500,00 reais.")
         
         elif saldo > 0:
